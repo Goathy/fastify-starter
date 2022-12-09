@@ -1,0 +1,12 @@
+*
+!LICENSE
+!README.md
+!.gitignore
+!package.json
+!yarn.lock
+!tsconfig.*
+!nodemon.json
+!src
+!src/*
+!__tests__
+!__tests__/*

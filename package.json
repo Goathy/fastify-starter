@@ -1,0 +1,37 @@
+{
+  "name": "fastify-starter",
+  "version": "1.0.0",
+  "type": "module",
+  "engines": {
+    "node": "18.*"
+  },
+  "main": "dist/start.js",
+  "repository": "git@github.com:Goathy/fastify-starter.git",
+  "author": "Jakub Gałecki <goathy.dev@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "lint": "ts-standard",
+    "lint:fix": "ts-standard --fix",
+    "build": "tsc -p ./tsconfig.build.json",
+    "test": "NODE_ENV=\"test\" tap --node-arg=--loader=ts-node/esm",
+    "start": "ts-node-esm ./src/start.ts",
+    "start:dev": "nodemon ./src/start.ts"
+  },
+  "devDependencies": {
+    "@fastify/type-provider-typebox": "^2.4.0",
+    "@types/node": "^18.11.12",
+    "@types/tap": "^15.0.7",
+    "fastify-tsconfig": "^1.0.1",
+    "nodemon": "^2.0.20",
+    "pino-pretty": "^9.1.1",
+    "tap": "^16.3.2",
+    "ts-node": "^10.9.1",
+    "ts-standard": "^12.0.1",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "@sinclair/typebox": "^0.25.12",
+    "fastify": "^4.10.2"
+  }
+}
