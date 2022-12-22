@@ -9,11 +9,7 @@ export const createLogger = (env: unknown): FastifyServerOptions['logger'] => {
     default:
       return {
         transport: {
-          target: 'pino-pretty',
-          options: {
-            levelFirst: true,
-            ignore: 'pid,hostname'
-          }
+          target: '@fastify/one-line-logger'
         }
       }
   }

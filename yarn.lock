@@ -299,6 +299,13 @@
   dependencies:
     fast-json-stringify "^5.0.0"
 
+"@fastify/one-line-logger@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@fastify/one-line-logger/-/one-line-logger-1.1.1.tgz#50c3e8338196ef7b4c69cda3e5f998599b3a9a80"
+  integrity sha512-OlhQxPU8ZwdU5xvI7+5q4nBsD9xGnJ6mjEZPg0xCd5ZqhVv/2rnSj3QcjoDm+grNyjgFbamfL2IS3jRHAv0/dQ==
+  dependencies:
+    pino-pretty "^9.0.1"
+
 "@fastify/type-provider-typebox@^2.4.0":
   version "2.4.0"
   resolved "https://registry.yarnpkg.com/@fastify/type-provider-typebox/-/type-provider-typebox-2.4.0.tgz#82e55bbf0da6d7f19e0521959467d4b7e0fefe4c"
@@ -2843,7 +2850,7 @@ pino-abstract-transport@^1.0.0, pino-abstract-transport@v1.0.0:
     readable-stream "^4.0.0"
     split2 "^4.0.0"
 
-pino-pretty@^9.1.1:
+pino-pretty@^9.0.1:
   version "9.1.1"
   resolved "https://registry.yarnpkg.com/pino-pretty/-/pino-pretty-9.1.1.tgz#e7d64c1db98266ca428ab56567b844ba780cd0e1"
   integrity sha512-iJrnjgR4FWQIXZkUF48oNgoRI9BpyMhaEmihonHeCnZ6F50ZHAS4YGfGBT/ZVNsPmd+hzkIPGzjKdY08+/yAXw==
