@@ -6,7 +6,8 @@
 !yarn.lock
 !tsconfig.*
 !nodemon.json
+!.eslintrc
 !src
 !src/*
-!__tests__
-!__tests__/*
+!tests
+!tests/*

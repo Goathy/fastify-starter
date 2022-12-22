@@ -2,11 +2,6 @@
   "extends": "fastify-tsconfig",
   "compilerOptions": {
     "module": "NodeNext",
-    "moduleResolution": "NodeNext",
-    "outDir": "dist"
+    "moduleResolution": "NodeNext"
   },
-  "include": [
-    "src/**/*",
-    "__tests__/**/*"
-  ],
 }
