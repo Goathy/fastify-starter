@@ -8,6 +8,6 @@
 !nodemon.json
 !.eslintrc
 !src
-!src/*
+!src/**/*
 !tests
-!tests/*
+!tests/**/*
