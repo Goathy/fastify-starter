@@ -1,9 +1,14 @@
-import { fastify } from './server.js'
 import { exit } from 'node:process'
+
+import { fastify } from './server.js'
 
 const start = async (): Promise<void> => {
   try {
-    await fastify.listen({ port: 3000, host: '0.0.0.0' })
+    await fastify.ready()
+
+    const { HOST, PORT } = fastify.config
+
+    await fastify.listen({ port: PORT, host: HOST })
   } catch (error) {
     fastify.log.error(error)
     exit(1)
