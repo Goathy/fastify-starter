@@ -11,7 +11,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "lint": "eslint \"{src,test}/**/*.ts\"",
+    "lint": "eslint \"{src,tests}/**/*.ts\"",
     "lint:fix": "yarn lint --fix",
     "build:ts": "tsc -p ./tsconfig.build.json",
     "build": "run-s lint build:ts",
