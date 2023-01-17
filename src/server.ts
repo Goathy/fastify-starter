@@ -21,7 +21,6 @@ const fastify = Fastify({
 }).withTypeProvider<TypeBoxTypeProvider>()
 
 await fastify.register(import('./core/config/config.js'))
-await fastify.register(import('./core/context/context.js'))
 
 fastify.get('/', async () => ({ status: 'ok' }))
 
