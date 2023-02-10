@@ -5,6 +5,7 @@ import { FastifyPluginAsync } from 'fastify'
 import Fp from 'fastify-plugin'
 
 import schema from './schema.js'
+import { createAjv } from './util.js'
 
 const CONFIG_KEY = 'config'
 
@@ -15,7 +16,7 @@ declare module 'fastify' {
 }
 
 const config: FastifyPluginAsync = async (fastify) => {
-  await fastify.register(import('@fastify/env'), { schema, data: env, confKey: CONFIG_KEY })
+  await fastify.register(import('@fastify/env'), { schema, data: env, confKey: CONFIG_KEY, ajv: { customOptions: createAjv } })
 }
 
 export default Fp(config)
